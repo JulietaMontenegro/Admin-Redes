@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile_front
+    ports:
+      - "4200:4200"
