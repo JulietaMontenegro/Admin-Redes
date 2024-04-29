@@ -1,11 +1,10 @@
-Dockerfile_back
-
 
 FROM node:21.7.1 AS builder
 
 WORKDIR /app 
 
-COPY ./ PSR2024-TP1-Cerutti-Brandon-BackEnd/Express /express-gen-ts . 
+COPY ./ PSR2024-TP1-Cerutti-Brandon-BackEnd/Express /express-gen-ts .
+ 
 RUN npm install 
 
 EXPOSE 3000  
