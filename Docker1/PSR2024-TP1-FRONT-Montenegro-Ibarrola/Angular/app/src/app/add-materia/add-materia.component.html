@@ -1,0 +1,19 @@
+
+<section class="listado-apply">
+    <h2 class="titulo">Ingrese los datos de la materia</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="nombre">Nombre de la Materia</label>
+      <input id="nombre" type="text" formControlName="nombre" placeholder="Ingrese nombre de la materia">
+  
+      <label for="nombreProfesor">Nombre del Profesor</label>
+      <input id="nombreProfesor" type="text" formControlName="nombreProfesor" placeholder="Ingrese el nombre completo del profesor">
+  
+      <label for="foto">Url de foto de la materia</label>
+      <input id="foto" type="text" formControlName="foto" placeholder="Ingrese la url de la foto">
+
+      <label for="horarios">Horarios de la materia</label>
+      <input id="horarios" type="text" formControlName="horarios" placeholder="Ingrese los horarios de la materia">
+      <button type="submit" class="primary">Agregar Materia</button>
+    </form>
+  </section>
+  

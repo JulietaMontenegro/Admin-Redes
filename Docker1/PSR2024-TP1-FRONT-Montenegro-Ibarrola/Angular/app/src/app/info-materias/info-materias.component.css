@@ -1,0 +1,20 @@
+li {
+    background-color: lightblue; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 10px;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding: 0;
+  }
+  @font-face{
+    font-family: 'KG Red Hands';
+    src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+  }
+
+  li {
+    font-family: 'KG Red Hands';
+  
+  }

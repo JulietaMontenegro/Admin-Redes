@@ -1,0 +1,35 @@
+<div class="alumno" *ngIf="alumno">
+  <div>
+    <p class="informacion">{{ alumno.nombre }}</p>
+    <p class="informacion">DNI: {{ alumno.id }}</p>
+  </div>
+</div>
+
+<div class="abm">
+  <div id="addAlumno">
+    <a [routerLink]="['/agregarNota', alumno?.id]">
+      <h2 class="leyenda">Agregar Nota</h2>
+    </a>
+  </div>
+  <div class="eliminarAlumno">
+    <a [routerLink]="['/eliminarNota', alumno?.id]">
+      <h2 class="leyenda">Eliminar Nota</h2>
+    </a>
+  </div>
+  <div class="eliminarAlumno">
+    <a [routerLink]="['/editarNota', alumno?.id]">
+      <h2 class="leyenda">Editar Nota</h2>
+    </a>
+  </div>
+  </div>
+<h3 id="titulo">Notas del alumno:</h3>
+
+<div class="calificaciones" *ngFor="let materia of notasArregladas | keyvalue">
+  <h4 id="materia">{{ materia.key.nombre }}</h4>
+  <div class="notas" *ngFor="let nota of materia.value">
+    <p id="tema"> {{ nota.tema }}</p>
+    <p id="calificacion">Calificación: {{ nota.calificacion }}</p>
+    <p id="id"> Id de nota : {{nota.id}}</p>
+  </div>
+</div>
+<p *ngIf="notas.length === 0">El alumno no tiene notas registradas hasta el momento.</p>

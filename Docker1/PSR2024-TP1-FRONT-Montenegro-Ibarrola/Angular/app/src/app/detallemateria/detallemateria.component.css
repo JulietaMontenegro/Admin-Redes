@@ -1,0 +1,72 @@
+
+@font-face{
+    font-family: 'KG Red Hands';
+    src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+  }
+.contenedorMateria{
+    display: flex;
+    align-items: center;
+    
+}
+  .foto {
+    height: 120px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 40px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .infoMateria{
+    font-family: 'KG Red Hands';
+    text-align: left;
+    padding-top: 40px;
+  }
+
+  .titulo{
+    font-family: 'KG Red Hands';
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .listaTemas{
+    font-family: 'KG Red Hands';
+    padding-top: 10px;
+   
+    border-radius: 10px;
+  }
+
+  .filas{
+    background-color: rgba(226, 43, 150, 0.158);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+.datos{
+  margin-top: 2px;
+  margin-bottom: 5px
+}
+a {
+
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.leyenda{
+  font-family: 'KG RedHands';
+  font-size: 15px;
+  text-decoration: none;
+  background-color: rgba(226, 43, 195, 0.295);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.modif{
+  display: inline-flex;
+}

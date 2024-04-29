@@ -1,0 +1,7 @@
+<section class="listado-apply">
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="idMateria">ID de la materia</label>
+      <input id="idMateria" type="number" formControlName="idMateria" placeholder="Ingrese el id de la materia que desee agregar">
+      <button type="submit" class="primary">Agregar Materia</button>
+    </form>
+  </section>

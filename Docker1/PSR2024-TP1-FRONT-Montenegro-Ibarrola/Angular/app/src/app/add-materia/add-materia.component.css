@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'KG Red Hands';
+    src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+  }
+
+.titulo{
+    font-family: 'KG Red Hands';
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+label {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-family: 'KG Red Hands';
+}
+input {
+    border: beige;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    width: 70%; /* Ajusta el ancho del input */
+    
+    margin-bottom: 20px;
+  }
+
+label, input {
+    display: block;
+    margin-left: 20px;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+form {
+    margin-top: 40px;
+}
+
+button {
+    background-color: rgba(137, 43, 226, 0.315);
+    border-radius: 10px;
+    padding-left : 20px;
+    padding-right : 20px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border: none;
+}

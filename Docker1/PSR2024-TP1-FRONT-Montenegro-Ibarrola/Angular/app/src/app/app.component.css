@@ -1,0 +1,13 @@
+
+  header.brand-name {
+    text-align: center;
+    height: 60px;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  #logo{
+    padding: 5px;
+    height: 45px;
+    width: 120px;
+  }

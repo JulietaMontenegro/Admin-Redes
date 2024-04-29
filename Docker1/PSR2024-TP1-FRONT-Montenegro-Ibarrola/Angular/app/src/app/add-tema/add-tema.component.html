@@ -1,0 +1,7 @@
+<section class="listado-apply">
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="tema">Tema</label>
+      <input id="tema" type="text" formControlName="tema" placeholder="Ingrese el nombre del nuevo tema">
+      <button type="submit" class="primary">Agregar Tema</button>
+    </form>
+  </section>

@@ -1,0 +1,7 @@
+<section class="listado-apply">
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="id">DNI</label>
+      <input id="id" type="number" formControlName="id" placeholder="Ingrese el dni del alumno que desea eliminar">
+      <button type="submit" class="primary">Eliminar Alumno</button>
+    </form>
+  </section>

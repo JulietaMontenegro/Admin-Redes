@@ -1,0 +1,71 @@
+.resultados {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  margin-top: 20px;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@font-face{
+  font-family: 'KG Red Hands';
+  src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+}
+
+@font-face{
+  font-family: 'NixieOne';
+  src: url("/assets/fuentes/NixieOne.ttf") format('truetype');
+}
+  .leyenda{
+    font-family: 'KG RedHands';
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgba(226, 43, 195, 0.295);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+.titulo {
+  padding: 10px 20px 0 20px;
+  font-family: 'KG Red Hands';
+}
+input[type="text"] {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 70%; /* Ajusta el ancho del input */
+}
+
+a {
+
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.busqueda{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.abm{
+  display: flex;
+  
+}
+#elimimarAlumno{
+  margin-left: 0px;
+}
+#addAlumno{
+  margin-right: 0px;
+}
+

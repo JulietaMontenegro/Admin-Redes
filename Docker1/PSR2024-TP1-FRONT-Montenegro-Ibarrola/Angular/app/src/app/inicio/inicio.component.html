@@ -1,0 +1,41 @@
+<section class="titulo">
+  <h1>Alumnos</h1>
+</section>
+
+<section class="busqueda">
+  <input type="text" [(ngModel)]="nombreBusqueda" placeholder="Haga click aquí para buscar por nombre" (input)="buscarAlumnos(nombreBusqueda)">
+</section>
+
+<div class="abm">
+<div id="addAlumno">
+  <a [routerLink]="['/agregarAlumno']">
+    <h2 class="leyenda">Agregar Alumno</h2>
+  </a>
+</div>
+<div id="eliminarAlumno">
+  <a [routerLink]="['/eliminarAlumno']">
+    <h2 class="leyenda">Eliminar Alumno</h2>
+  </a>
+</div>
+<div id="agregarMateria">
+  <a [routerLink]="['/agregarMateria']">
+    <h2 class="leyenda">Agregar Materia</h2>
+  </a>
+</div>
+<div id="eliminarAlumno">
+  <a [routerLink]="['/eliminarMateria']">
+    <h2 class="leyenda">Eliminar Materia</h2>
+  </a>
+</div>
+<div id="eliminarAlumno">
+  <a [routerLink]="['/infoMaterias']">
+    <h2 class="leyenda">Ver info Materias</h2>
+  </a>
+</div>
+</div>
+
+<section class="resultados">
+  <div *ngIf="alumnos && alumnos.length === 0">No se encontraron resultados</div>
+  <app-alumno *ngFor="let alumno of alumnos" [alumno]="alumno"></app-alumno>
+</section>
+

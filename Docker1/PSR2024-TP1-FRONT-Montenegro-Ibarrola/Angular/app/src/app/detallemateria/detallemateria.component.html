@@ -1,0 +1,33 @@
+<div class="contenedorMateria">
+    <img class="foto" src="{{materia?.foto}}">
+    <div class="infoMateria">
+        <h2 >{{ materia?.nombre }}</h2>
+        <h6 class="datos">Id materia : {{ materia?.id }}</h6>
+        <h6 class="datos">{{ materia?.nombreProfesor }}</h6>
+        <h6 class="datos">{{ materia?.horarios }}</h6>
+    </div>
+</div>
+<div class="modif">
+<div id="eliminarAlumno">
+    <a [routerLink]="['/modificarMateria', materia?.id]">
+      <h2 class="leyenda">Modificar Materia</h2>
+    </a>
+  </div>
+  <div id="eliminarAlumno">
+    <a [routerLink]="['/agregarTema', materia?.id]">
+      <h2 class="leyenda">Agregar Tema</h2>
+    </a>
+  </div>
+  <div id="eliminarAlumno">
+    <a [routerLink]="['/eliminarTema', materia?.id]">
+      <h2 class="leyenda">Eliminar Tema</h2>
+    </a>
+  </div>
+</div>
+<h2 class="titulo">Temas</h2>
+<div class="listaTemas">
+    <div class="filas" *ngFor="let tema of materia?.temas">{{ tema }}</div>
+</div>
+
+
+

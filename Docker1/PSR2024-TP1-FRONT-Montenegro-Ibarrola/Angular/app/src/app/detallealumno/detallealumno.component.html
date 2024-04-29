@@ -1,0 +1,38 @@
+<div class="alumno" *ngIf="alumno">
+  <div>
+    <h3 id="titulo">Información del alumno</h3>
+    <p class="informacion">{{ alumno.nombre }}</p>
+    <p class="informacion">DNI: {{ alumno.id }}</p>
+  </div>
+
+  <div class="notasedit">
+    <div>
+      <a [routerLink]="['/notas', alumno.id]">
+        <h2 class="notas">Ver calificaciones</h2>
+      </a>
+    </div>
+    <div>
+      <a [routerLink]="['/editarAlumno', alumno.id]">
+        <h2 class="notas">Editar Alumno</h2>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="notasedit">
+  <div>
+    <a [routerLink]="['/agregarMateriaAlumno', alumno?.id]">
+      <h2 class="notas">Agregar Materia</h2>
+    </a>
+  </div>
+  <div>
+    <a [routerLink]="['/eliminarMateriaAlumno', alumno?.id]">
+      <h2 class="notas">Eliminar Materia</h2>
+    </a>
+  </div>
+</div>
+<h3 id="materias">Materias del alumno:</h3>
+<section class="resultados" *ngIf="materiasAlumno.length > 0">
+  <app-materia *ngFor="let alumnoMateria of materiasAlumno" [materia]="alumnoMateria"></app-materia>
+</section>
+<p *ngIf="materiasAlumno.length === 0">El alumno no tiene materias asignadas.</p>

@@ -1,0 +1,70 @@
+@font-face{
+    font-family: 'NixieOne';
+    src: url("/assets/fuentes/NixieOne.ttf") format('truetype');
+  }
+  @font-face{
+    font-family: 'KGRedHands';
+    src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+  }
+  .alumno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--primary-color);
+    
+  }
+  .notas{
+    font-family: 'KGRedHands';
+    margin-right: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgba(137, 43, 226, 0.295);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .notasedit{
+    display: flex;
+    margin-left: 10px;
+  }
+
+
+  .informacion{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  
+  }
+
+  p{
+    font-family: 'NixieOne';
+    font-weight: bold;
+  }
+  #materias{
+  font-family: 'KG Red Hands';
+  text-align: center;
+  }
+
+.resultados {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  margin-top: 50px;
+  justify-content: space-around;
+
+}
+
+
+#titulo {
+    padding: 10px 20px 0 20px;
+    font-family: 'KG Red Hands';
+}

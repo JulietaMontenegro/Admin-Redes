@@ -1,0 +1,20 @@
+<section class="listado-apply">
+    <h2 class="titulo">Ingrese los datos de la nota</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+  
+      <label for="id">ID de la nota a editar</label>
+      <input id="id" type="number" formControlName="id" placeholder="Ingrese el id de la nota que desea editar">
+  
+      <label for="materiaId">ID de la materia</label>
+      <input id="materiaId" type="number" formControlName="materiaId" placeholder="Ingrese el id de la materia">
+  
+      <label for="tema">Tema</label>
+      <input id="tema" type="text" formControlName="tema" placeholder="Ingrese el tema de la evaluacion">
+  
+      <label for="calificacion">Calificacion</label>
+      <input id="calificacion" type="number" formControlName="calificacion" placeholder="Ingrese la calificacion">
+  
+      <button type="submit" class="primary">Editar nota</button>
+    </form>
+  </section>
+  

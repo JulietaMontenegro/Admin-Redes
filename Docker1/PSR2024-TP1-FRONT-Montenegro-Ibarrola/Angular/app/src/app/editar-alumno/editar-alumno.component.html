@@ -1,0 +1,13 @@
+<section class="listado-apply">
+    <h2 class="titulo">Ingrese los datos del alumno</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+  
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" formControlName="nombre" placeholder="Ingrese el nombre completo del alumno">
+  
+      <label for="mail">Correo electrónico</label>
+      <input id="mail" type="email" formControlName="mail" placeholder="Ingrese el correo del alumno">
+      <button type="submit" class="primary">Editar alumno</button>
+    </form>
+  </section>
+  

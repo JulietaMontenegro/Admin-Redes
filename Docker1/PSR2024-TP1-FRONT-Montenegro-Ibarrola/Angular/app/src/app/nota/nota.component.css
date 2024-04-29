@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'NixieOne';
+    src: url("/assets/fuentes/NixieOne.ttf") format('truetype');
+  }
+  @font-face{
+    font-family: 'KGRedHands';
+    src: url("/assets/fuentes/KGRedHands.ttf") format('truetype');
+  }
+
+.alumno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .informacion{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'NixieOne';
+    font-weight: bolder;
+  
+  }
+
+  #titulo{
+    font-family: 'KGRedHands';
+    padding-left: 20px;
+    text-align: center;
+  }
+  
+  .notas{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(43, 144, 226, 0.178);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: 'NixieOne';
+    font-weight: bolder;
+  }
+
+  #calificacion{
+    justify-content: right;
+  }
+
+  #tema{
+    margin-left: 40px;
+  }
+
+  #materia{
+    margin-left: 20px;
+    font-family: 'KGRedHands';
+  }
+  .abm{
+    display: flex;
+  }
+  a {
+
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  .leyenda{
+    font-family: 'KG RedHands';
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgba(226, 43, 195, 0.295);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+  #id{
+    margin-right: 20px;
+  }
